@@ -69,20 +69,38 @@ styles.unshift("Rap", "Reggae");
 alert(styles); */
 
 // EJERCICIO 7
-
-let arr = [];
-
+/*console.log("hola");
 function sumImput() {
-  let valores = prompt("Introduce un valor");
-  arr.push(valores);
+  let arr = [];
+  let valores;
 
+  let deberiaSalir = false;
+  do {
+    console.log(deberiaSalir);
+
+    let valores = +prompt("Introduce un número", 0);
+    if (valores == "") {
+      deberiaSalir = true;
+    }
+    if (valores == null) {
+      deberiaSalir = true;
+    }
+
+    if (!isFinite(valores)) {
+      deberiaSalir = true;
+    }
+    console.log(deberiaSalir);
+    arr.push(+valores);
+  } while (!deberiaSalir);
+
+  let suma = 0;
+  arr.forEach(function(valor) {
+    suma += valor;
+  });
+
+  return suma;
 }
 
-do {
-    sumImput();
-}while{
-    valores = number,
-}
+console.log(sumImput());*/
 
 
-sumImput()
